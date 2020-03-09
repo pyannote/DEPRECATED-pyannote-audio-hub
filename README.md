@@ -1,6 +1,6 @@
 # pyannote.audio hub
 
-This repository serves as a hub for pretrained [pyannote.audio](http://github.com/pyannote/pyannote-audio) models and pipelines, including speech activity detection, speaker change detection, overlapped speech detection, speaker embedding, and speaker diarization
+This repository serves as a hub for pretrained [pyannote.audio](http://github.com/pyannote/pyannote-audio) models and pipelines, including speech activity detection, speaker change detection, overlapped speech detection, speaker embedding, and speaker diarization.
 
 :warning: Those (free) models are the result of a lot of work from a lot of people, so:
 * Everyone - please let us know how you use those models
@@ -22,6 +22,7 @@ Here is `pyannote.audio` reference if that helps:
   Year = {2020},
 }
 ```
+
 ## Table of contents
 
 - [License](#license)
@@ -67,7 +68,6 @@ Here is `pyannote.audio` reference if that helps:
 
     AUTHORS
     Hervé BREDIN - http://herve.niderb.fr
-
 
 
 ## Pipelines
@@ -256,10 +256,9 @@ distance = cdist(np.mean(emb1, axis=0, keepdims=True),
 
     | Model                 | Training set                             | Development set
 ----|-----------------------|------------------------------------------|-----------------
-❌ |`emb` or `emb_voxceleb` | `VoxCeleb1.custom.trn` ⋃ `VoxCeleb2.trn` | `VoxCeleb1.custom.dev`
+✅ |`emb` or `emb_voxceleb` | `VoxCeleb1.custom.trn` ⋃ `VoxCeleb2.trn` | `VoxCeleb1.custom.dev`
 ✅ |`emb_ami`               | `AMI.trn`                                | `AMI.dev`
 
-Models marked with ❌ are not available yet but will be released shortly.
 
 #### Citation
 
