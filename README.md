@@ -102,7 +102,7 @@ for turn, _, speaker in diarization.itertracks(yield_label=True):
 
    | Pipeline               | Models used internally                       | Development set
 ---|------------------------|----------------------------------------------|-----------------
-❌ | `dia` or `dia_dihard`  | {`sad_dihard`, `scd_dihard`, `emb_voxceleb`} | `DIHARD.custom.dev`
+✅ | `dia` or `dia_dihard`  | {`sad_dihard`, `scd_dihard`, `emb_voxceleb`} | `DIHARD.custom.dev`
 ✅ | `dia_ami`              | {`sad_ami`, `scd_ami`, `emb_ami`}            | `AMI.dev`
 ❌ | `dia_etape`            | {`sad_etape`, `scd_etape`, `emb_etape`}      | `Etape.dev`
 
