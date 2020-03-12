@@ -106,7 +106,7 @@ for turn, _, speaker in diarization.itertracks(yield_label=True):
 ✅ | `dia_ami`              | {`sad_ami`, `scd_ami`, `emb_ami`}            | `AMI.dev`
 ❌ | `dia_etape`            | {`sad_etape`, `scd_etape`, `emb_etape`}      | `Etape.dev`
 
-Pipelines marked with ❌ are not available yet but will be released shortly.
+Pipelines marked with ❌ are not available yet but will be released at some point.
 
 ### Citation
 
@@ -167,6 +167,8 @@ for speech_region in speech_activity_detection.get_timeline():
 ✅ |`sad_ami`             | `AMI.trn`           | `AMI.dev`
 ❌ |`sad_etape`           | `Etape.trn`         | `Etape.dev`
 
+Models marked with ❌ are not available yet but will be released at some point.
+
 #### Citation
 
 ```bibtex
@@ -185,6 +187,9 @@ for speech_region in speech_activity_detection.get_timeline():
 ✅ | `scd` or `scd_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
 ✅ |`scd_ami`              | `AMI.trn`           | `AMI.dev`
 ❌ |`scd_etape`            | `Etape.trn`         | `Etape.dev`
+
+Models marked with ❌ are not available yet but will be released at some point.
+
 
 #### Citation
 
@@ -206,6 +211,9 @@ for speech_region in speech_activity_detection.get_timeline():
 ✅ |`ovl` or `ovl_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
 ✅ |`ovl_ami`             | `AMI.trn`           | `AMI.dev`
 ❌ |`ovl_etape`           | `Etape.trn`         | `Etape.dev`
+
+Models marked with ❌ are not available yet but will be released at some point.
+
 
 #### Citation
 
@@ -350,5 +358,14 @@ VoxCeleb 1 test set (`VoxCeleb1.tst`) has **not** been used to train any of the 
 ```
 
 ### Etape
+
+```bibtex
+@inproceedings{etape,
+  title = {{The ETAPE Corpus for the Evaluation of Speech-based TV Content Processing in the French Language}},
+  Author = {Gravier, Guillaume and Adda, Gilles and Paulson, Niklas and Carr{\'e}, Matthieu and Giraudel, Aude and Galibert, Olivier},
+  Booktitle = {{Proc. LREC 2012}},
+  Year = {2012},
+}
+```
 
 #### Citation
