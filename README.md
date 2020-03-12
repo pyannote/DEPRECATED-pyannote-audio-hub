@@ -100,11 +100,11 @@ for turn, _, speaker in diarization.itertracks(yield_label=True):
 
 ### Speaker diarization
 
-   | Pipeline               | Models used internally                       | Development set
----|------------------------|----------------------------------------------|-----------------
-✅ | `dia` or `dia_dihard`  | {`sad_dihard`, `scd_dihard`, `emb_voxceleb`} | `DIHARD.custom.dev`
-✅ | `dia_ami`              | {`sad_ami`, `scd_ami`, `emb_ami`}            | `AMI.dev`
-❌ | `dia_etape`            | {`sad_etape`, `scd_etape`, `emb_etape`}      | `Etape.dev`
+|   | Pipeline               | Models used internally                       | Development set
+|---|------------------------|----------------------------------------------|-----------------
+| ✅ | `dia` or `dia_dihard`  | {`sad_dihard`, `scd_dihard`, `emb_voxceleb`} | `DIHARD.custom.dev`
+| ✅ | `dia_ami`              | {`sad_ami`, `scd_ami`, `emb_ami`}            | `AMI.dev`
+| ❌ | `dia_etape`            | {`sad_etape`, `scd_etape`, `emb_etape`}      | `Etape.dev`
 
 Pipelines marked with ❌ are not available yet but will be released at some point.
 
@@ -161,11 +161,11 @@ for speech_region in speech_activity_detection.get_timeline():
 
 ### Speech activity detection
 
-   | Model                | Training set        | Development set
----|----------------------|---------------------|-----------------
-✅ | `sad` or `sad_dihard`| `DIHARD.custom.trn` | `DIHARD.custom.dev`
-✅ |`sad_ami`             | `AMI.trn`           | `AMI.dev`
-❌ |`sad_etape`           | `Etape.trn`         | `Etape.dev`
+|   | Model                | Training set        | Development set
+|---|----------------------|---------------------|-----------------
+| ✅ | `sad` or `sad_dihard`| `DIHARD.custom.trn` | `DIHARD.custom.dev`
+| ✅ |`sad_ami`             | `AMI.trn`           | `AMI.dev`
+| ❌ |`sad_etape`           | `Etape.trn`         | `Etape.dev`
 
 Models marked with ❌ are not available yet but will be released at some point.
 
@@ -182,11 +182,11 @@ Models marked with ❌ are not available yet but will be released at some point.
 
 ### Speaker change detection
 
-   | Model                 | Training set        | Development set
----|-----------------------|---------------------|-----------------
-✅ | `scd` or `scd_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
-✅ |`scd_ami`              | `AMI.trn`           | `AMI.dev`
-❌ |`scd_etape`            | `Etape.trn`         | `Etape.dev`
+|   | Model                 | Training set        | Development set
+|---|-----------------------|---------------------|-----------------
+| ✅ | `scd` or `scd_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
+| ✅ |`scd_ami`              | `AMI.trn`           | `AMI.dev`
+| ❌ |`scd_etape`            | `Etape.trn`         | `Etape.dev`
 
 Models marked with ❌ are not available yet but will be released at some point.
 
@@ -206,11 +206,11 @@ Models marked with ❌ are not available yet but will be released at some point.
 
 ### Overlapped speech detection
 
-   | Model                | Training set        | Development set
----|----------------------|---------------------|-----------------
-✅ |`ovl` or `ovl_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
-✅ |`ovl_ami`             | `AMI.trn`           | `AMI.dev`
-❌ |`ovl_etape`           | `Etape.trn`         | `Etape.dev`
+|   | Model                | Training set        | Development set
+|---|----------------------|---------------------|-----------------
+| ✅ |`ovl` or `ovl_dihard` | `DIHARD.custom.trn` | `DIHARD.custom.dev`
+| ✅ |`ovl_ami`             | `AMI.trn`           | `AMI.dev`
+| ❌ |`ovl_etape`           | `Etape.trn`         | `Etape.dev`
 
 Models marked with ❌ are not available yet but will be released at some point.
 
@@ -262,10 +262,10 @@ distance = cdist(np.mean(emb1, axis=0, keepdims=True),
                  metric='cosine')[0, 0]
 ```
 
-    | Model                 | Training set                             | Development set
-----|-----------------------|------------------------------------------|-----------------
-✅ |`emb` or `emb_voxceleb` | `VoxCeleb1.custom.trn` ⋃ `VoxCeleb2.trn` | `VoxCeleb1.custom.dev`
-✅ |`emb_ami`               | `AMI.trn`                                | `AMI.dev`
+|    | Model                 | Training set                             | Development set
+|----|-----------------------|------------------------------------------|-----------------
+| ✅ |`emb` or `emb_voxceleb` | `VoxCeleb1.custom.trn` ⋃ `VoxCeleb2.trn` | `VoxCeleb1.custom.dev`
+| ✅ |`emb_ami`               | `AMI.trn`                                | `AMI.dev`
 
 
 #### Citation
