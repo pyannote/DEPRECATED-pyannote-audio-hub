@@ -1,3 +1,5 @@
+:warning: This is no longer supported since version 2.x of pyannote.audio has been released. :warning:
+
 # pyannote.audio hub [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pyannote/pyannote-audio/blob/develop/notebooks/introduction_to_pyannote_audio_speaker_diarization_toolkit.ipynb)
 
 This repository serves as a hub for pretrained [pyannote.audio](http://github.com/pyannote/pyannote-audio) models and pipelines, including speech activity detection, speaker change detection, overlapped speech detection, speaker embedding, and speaker diarization.
